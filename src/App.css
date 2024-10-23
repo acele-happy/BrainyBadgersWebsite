@@ -325,3 +325,12 @@ div#four{
   color: #888;
   padding: 10px;
 }
+.scrolltotop{
+  border-radius: 50% !important;
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex;
+}
+.scrolltotop >*{
+  color: #fff !important;
+}

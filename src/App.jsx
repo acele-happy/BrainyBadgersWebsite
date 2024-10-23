@@ -4,6 +4,9 @@ import {FaInstagram,FaLinkedin,FaPhone,FaTwitter, FaVoicemail, FaYoutube} from "
 import { useState } from 'react';
 import { FaLocationPin } from 'react-icons/fa6';
 import { AiOutlineMail } from 'react-icons/ai';
+import ScrollToTop from 'react-scroll-to-top';
+
+// import {} 
 function App() {
   const [formData, setFormData] = useState({
     name: "",
@@ -199,6 +202,20 @@ function App() {
         <button>Send</button>
   </div>
 </div>
+{/* <ScrollToTop
+        smooth="true"
+        className="scrolltotop"
+        width="20"
+        height="20"
+        color="#fff"
+      /> */}
+      <ScrollToTop
+      smooth="true"
+      className="scrolltotop"
+      width="20"
+      height="20"
+      color="#d7ad46"
+      />
 
 <div className="footer">Copyright &copy; 2024. Brainy Badgers</div>
     </div>
