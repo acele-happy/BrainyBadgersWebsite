@@ -1,5 +1,6 @@
 import './index.css';
 import './App.css'
+import {FaInstagram,FaLinkedin,FaTwitter} from "react-icons/fa"
 function App() {
 
   return (
@@ -41,40 +42,108 @@ function App() {
   </div>
 </div>
 
+<div className="elab">
+    <h2>E-Lab Challenges</h2>
+    <p>In E-Lab, we gain valuable leadership skills and tools to help us pursue our missions effectively. Through hands-on challenges and collaborative projects, we engage deeply with our communities, driving real impact and personal growth.</p>
+    <div className="cards">
+      <div className="card">
+        <img src='src\assets\home.jpg'/>
+        <div>
+          <span>1</span><br/>
+          <h2>Introduction</h2>
+          <p>Each team member made an elevator pitch including what they're passionate about, why, and what they want to do to solve it, as well as what they bring to the team.</p>
+        </div>
+        
+      </div>
+      <div className="card">
+        <img src='src\assets\home.jpg'/>
+        <div>
+          <span>2</span><br/>
+          <h2>Discover Africa</h2>
+          <p>We learnt more about the Kamba community from Kenya and made video where each member presented what the learnt about that community.</p>
+        </div>
+        
+      </div>
+      <div className="card">
+        <img src='src\assets\home.jpg'/>
+        <div>
+          <span>3</span><br/>
+          <h2>HELP-LAB</h2>
+          <p>We went to Kenza International School where we taught primary students more about public speaking and how they can improve theirs.</p>
+        </div>
+        
+      </div>
+      <div className="card" style={{marginTop:"150px"}}>
+        <img src='src\assets\home.jpg'/>
+        <div>
+          <span>4</span><br/>
+          <h2>Hunt for Treasure</h2>
+          <p>Each team member made an elevator pitch including what they're passionate about, why, and what they want to do to solve it, as well as what they bring to the team.</p>
+        </div>
+        
+      </div>
+      <div className="card" style={{marginTop:"150px"}}>
+        <img src='src\assets\home.jpg'/>
+        <div>
+          <span>5</span><br/>
+          <h2>Launch Your Mission</h2>
+          <p>We learnt more about the Kamba community from Kenya and made video where each member presented what the learnt about that community.</p>
+        </div>
+        
+      </div>
+      <div className="card" style={{marginTop:"150px"}}>
+        <img src='src\assets\home.jpg'/>
+        <div>
+          <span>6</span><br/>
+          <h2>Digital Print</h2>
+          <p>We went to Kenza International School where we taught primary students more about public speaking and how they can improve theirs.</p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
 <div className="ourteam">
   <h2>Meet The Team</h2>
   <div className="imagecards">
     <div className="card">
       <img src='src\assets\w.jpg'/>
-      <div><span style={{fontWeight:"bold"}}>Erick Kanja</span> <br/><span style={{color:"#222"}}>Team Lead</span></div>
+      <div><span style={{fontWeight:"bold"}}>Erick Kanja</span> <br/><span style={{color:"#222"}}>Team Lead</span> <span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
     <div className="card">
       <img src='src\assets\w.jpg'/>
-      <div><span style={{fontWeight:"bold"}}>Lydivine Umutesi</span> <br/><span style={{color:"#222"}}>Team Lead</span></div>
+      <div><span style={{fontWeight:"bold"}}>Lydivine Umutesi</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
     <div className="card">
       <img src='src\assets\w.jpg'/>
-      <div><span style={{fontWeight:"bold"}}>Dennis Nyiringango</span> <br/><span style={{color:"#222"}}>Team Lead</span></div>
+      <div><span style={{fontWeight:"bold"}}>Dennis Nyiringango</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
     <div className="card">
       <img src='src\assets\me.jpg'/>
-      <div><span style={{fontWeight:"bold"}}>Acele Happy</span> <br/><span style={{color:"#222"}}>Team Lead</span></div>
+      <div><span style={{fontWeight:"bold"}}>Acele Happy</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
     <div className="card">
       <img src='src\assets\w.jpg'/>
-      <div><span style={{fontWeight:"bold"}}>Amazing Mkonta</span> <br/><span style={{color:"#222"}}>Team Lead</span></div>
+      <div><span style={{fontWeight:"bold"}}>Amazing Mkonta</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
     <div className="card">
       <img src='src\assets\w.jpg'/>
-      <div><span style={{fontWeight:"bold"}}>Kevin Runanira</span> <br/><span style={{color:"#222"}}>Team Lead</span></div>
+      <div><span style={{fontWeight:"bold"}}>Kevin Runanira</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
   </div>
+
+  
+</div>
+
+<div className="contact">
+  
 </div>
     </div>
   )

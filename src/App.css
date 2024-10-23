@@ -165,7 +165,7 @@ div#four{
 
 .ourteam{
   left: 100px;
-  top: 120px;
+  top: 400px;
   position: relative;
   width: 92%;
 }
@@ -188,9 +188,55 @@ div#four{
   background-color: #fff;
   width: 250px;
   position: relative;
-  bottom: 70px;
+  bottom: 80px;
   left: 25px;
   padding: 5px;
   border-radius: 10px;
   opacity: 0.7;
+}
+
+.elab{
+  left: 100px;
+  top: 200px;
+  position: relative;
+  width: 92%;
+}
+
+.elab h2{
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.elab p{
+  width: 90%;
+  text-align: center;
+  color: #333;
+}
+
+.elab .cards{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.elab .cards .card div{
+  background-color: #fff;
+  opacity: 1;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.elab .cards .card div span{
+  text-align: center;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: #d7ad46;
+  border-radius: 50%;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 100px;
+  top: 15px;
 }
