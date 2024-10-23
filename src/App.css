@@ -1,42 +1,196 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.navbar{
+  padding: 10px;
+  height: 60px;
+  background: none;
+}
+.bb{
+  color: #8bc355;
+  font-size: 1em;
+  margin-left: 30px;
+}
+ul{
+  margin-right: 50px;
+}
+li{
+  color: #fff;
+}
+ul li:hover{
+  color: #d7ad46 !important;
+}
+.container{
+  height: 90vh;
+  /* background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\home.jpg"); */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Scales the image to cover the entire area */
+  background-position: center; /* Centers the image */
+  background-color: #1e2327;
+}
+.home h1{
+  font-weight: bold;
+  font-size: 5em;
+  color: #fff;
+  position: relative;
+  left: 100px;
+  top: 50px;
+  width: 50%;
+}
+.home p{
+  position: relative;
+  left: 100px;
+  top: 50px;
+  width: 50%;
+  color: gray;
+}
+.home button{
+  position: relative;
+  left: 100px;
+  top: 80px;
+  border:1px solid #8bc355;
+  color: #fff;
+  width: 20%;
+  padding: 10px;
+  border-radius: 5px;  
+}
+.home button:hover{
+  background: #8bc355;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+.aboutus{
+  left: 100px;
+  top: 100px;
+  position: relative;
+  width: 92%;
+  display: flex;
+  justify-content: space-evenly;
+  /* text-align: center; */
+}
+
+.aboutus h2{
+  width: 200px;
+  font-weight: bold;
+  font-size: 1.2em;
   text-align: center;
+  margin-left: 250px;
+  color: #d7ad46;
+  letter-spacing: 2px;
+}
+.aboutus .about{
+  padding: 15px;
+}
+.about p{
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 30px;
+}
+.about button{
+  position: relative;
+  left: 250px;
+  top: 10px;
+  border:1px solid #d7ad46;
+  color: #111;
+  width: 40%;
+  padding: 10px;
+  border-radius: 5px;  
+}
+.about button:hover{
+  background-color: #d7ad46;
+  color: #fff;
+}
+.abtimg img{
+  background-color: red;
+  width: 100%;
+  height: 90%;
+}
+.home{
+  display: flex;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.imagecircle{
+  /* background-color: #8bc355; */
+  height: 400px;
+  width:400px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-right: 50px;
+  position: relative;
+ }
+
+ .scale{
+  height: 190px;
+  width: 180px;
+  background-size: cover;
+  position: absolute;
+  transition: 0.3s all;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+div#one {
+  background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\home.jpg");
+  -moz-border-radius: 150px 0 0 0;
+  border-radius: 150px 0 0 0;
+  left: 0;
+  top: 0;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+div#two{
+   background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\e.jpg");
+  -moz-border-radius: 0 150px 0 0;
+  border-radius: 0 150px 0 0;
+  right: 0;
+}
+div#three{
+  background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\w.jpg");
+  -moz-border-radius: 0 0 150px 0;
+  border-radius: 0 0 150px 0;
+  bottom: 0;
+  right: 0;
+}
+div#four{
+  background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\r.jpg");
+  -moz-border-radius: 0 0 0 150px;
+  border-radius: 0 0 0 150px;
+  bottom: 0;
+}
+.scale:hover{
+  transform: scale(1.1);
+  z-index: 100;
+    filter: blur(0) !important;
+  -webkit-filter: blur(0) !important;
+}
+.container:hover .scale{
+  filter: blur(0.5px);
+  -webkit-filter: blur(0.5px);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.ourteam{
+  left: 100px;
+  top: 120px;
+  position: relative;
+  width: 92%;
 }
-
-.card {
-  padding: 2em;
+.ourteam h2{
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.5em;
 }
-
-.read-the-docs {
-  color: #888;
+.imagecards{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns:1fr 1fr  1fr;
+}
+.card{
+  width: 300px;
+  height: 300px;
+  /* background-color: rebeccapurple; */
+}
+.card div{
+  background-color: #fff;
+  width: 250px;
+  position: relative;
+  bottom: 70px;
+  left: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  opacity: 0.7;
 }
