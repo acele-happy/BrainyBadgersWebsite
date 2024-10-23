@@ -5,6 +5,7 @@ import { useState,useRef } from 'react';
 import { FaLocationPin } from 'react-icons/fa6';
 import { AiOutlineMail } from 'react-icons/ai';
 import ScrollToTop from 'react-scroll-to-top';
+import axios from 'axios';
 
 // import {} 
 function App() {
@@ -31,6 +32,19 @@ function App() {
   };
   const teamScroll = () => {
     document.getElementById("team").scrollIntoView({ behavior: "smooth" });
+  };
+
+  const onSubmit = () => {
+    console.log("hhh")
+    axios
+      // .post("https://portifolio-backend-u7ba.vercel.app/contactme", formData)
+      .post("https://portifolio-backend-1-sbzy.onrender.com/contactme", formData)
+      .then((data) => {
+        window.location.reload()
+        console.log("dataaa "+data)
+        return;
+      })
+      .catch((ex) => console.log("erorrrr "+ex));
   };
 
   return (
@@ -211,7 +225,7 @@ function App() {
             onChange={onchange}
           ></textarea>
         </form>
-        <button>Send</button>
+        <button onClick={onSubmit}>Send</button>
   </div>
 </div>
       <ScrollToTop
