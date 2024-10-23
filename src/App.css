@@ -185,6 +185,10 @@ div#four{
   height: 300px;
   /* background-color: rebeccapurple; */
 }
+.card img{
+  height: 250px;
+  width: 300px;
+}
 .card div{
   background-color: #fff;
   width: 250px;
@@ -255,6 +259,9 @@ div#four{
   background-color: #8bc355;
   width: 50%;
   height: auto;
+  background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\alu.jpg");
+  /* background-position: center;
+  background-repeat: no-repeat; */
 }
 .contact form{
   display: flex;
@@ -333,4 +340,5 @@ div#four{
 }
 .scrolltotop >*{
   color: #fff !important;
+  /* color: #d7ad46 #8bc355; */
 }

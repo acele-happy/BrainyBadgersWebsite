@@ -1,7 +1,7 @@
 import './index.css';
 import './App.css'
 import {FaInstagram,FaLinkedin,FaPhone,FaTwitter, FaVoicemail, FaYoutube} from "react-icons/fa"
-import { useState } from 'react';
+import { useState,useRef } from 'react';
 import { FaLocationPin } from 'react-icons/fa6';
 import { AiOutlineMail } from 'react-icons/ai';
 import ScrollToTop from 'react-scroll-to-top';
@@ -21,23 +21,35 @@ function App() {
     }));
   };
 
+  const ref = useRef(null);
+  const handleClickSroll = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const contactScroll = () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  };
+  const teamScroll = () => {
+    document.getElementById("team").scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className='container'>
        <div className="navbar flex justify-between items-center px-4 py-2">
   <h1 className="bb">Brainy<span style={{color:"#d7ad46"}}>Badgers</span></h1>
   <ul className="flex space-x-8">
-    <li><a href="#" >Home</a></li>
-    <li><a href="#" >About Us</a></li>
-    <li><a href="#" >Challenges</a></li>
-    <li><a href="#" >Contact Us</a></li>
+    <li onClick={handleClickSroll}><a href="#home" >Home</a></li>
+    <li onClick={handleClickSroll}><a href="#about" >About Us</a></li>
+    <li onClick={handleClickSroll}><a href="#challenges" >Challenges</a></li>
+    <li onClick={contactScroll}><a href="#contact" >Contact Us</a></li>
   </ul>
 </div>
 
-<div className="home">
+<div className="home" id='home'>
     <div>
     <h1>The Brainy <br/>Badgers</h1>
     <p>Our think tank mission is to transform the agricultural landscape through innovative strategies that drive job creation.</p>
-    <button>Contact Us</button>
+    <button onClick={contactScroll}>Contact Us</button>
     </div>
     <div className='imagecircle'>
     <div class="scale" id="one"></div>
@@ -48,7 +60,7 @@ function App() {
 
 </div>
 
-<div className="aboutus">
+<div className="aboutus" id='about'>
 
 <div className='abtimg'>
   <img src='src\assets\bb.jpg' alt="pic"/>
@@ -56,11 +68,11 @@ function App() {
   <div className='about'> 
   <h2>ABOUT US</h2>
   <p>We are a passionate and diverse team of six innovators from all corners of Africa, driven by a shared mission to tackle some of the most pressing challenges in agriculture. With a perfect balance of gender and a variety of cultural and educational backgrounds, our team reflects the spirit of collaboration and inclusion that defines our journey.<br/><br /> Meeting at the African Leadership University (ALU) in Cohort 2 of the E-Lab program, we decided to unite our strengths, knowledge, and experiences to address agricultural challenges, with a focus on job creation and sustainable development. Agriculture is at the heart of Africa’s economy, and we believe that innovative solutions can unlock new opportunities for growth, efficiency, and resilience across the continent.<br/><br /> Our journey is just beginning, and we are excited about what lies ahead. With the support of ALU and the collaborative spirit within our team, we are confident that our solutions will contribute to transforming agriculture and creating more jobs for future generations. The best is yet to come, and we invite you to follow our progress as we work towards a brighter, more sustainable future.</p>
-  <button>Meet Our Team!</button>
+  <button onClick={teamScroll}>Meet Our Team!</button>
   </div>
 </div>
 
-<div className="elab">
+<div className="elab" id='challenges'>
     <h2>E-Lab Challenges</h2>
     <p>In E-Lab, we gain valuable leadership skills and tools to help us pursue our missions effectively. Through hands-on challenges and collaborative projects, we engage deeply with our communities, driving real impact and personal growth.</p>
     <div className="cards">
@@ -83,7 +95,7 @@ function App() {
         
       </div>
       <div className="card">
-        <img src='src\assets\home.jpg'/>
+        <img src='src\assets\pri.jpg'/>
         <div>
           <span>3</span><br/>
           <h2>HELP-LAB</h2>
@@ -122,7 +134,7 @@ function App() {
     </div>
   </div>
 
-<div className="ourteam">
+<div className="ourteam" id='team'>
   <h2>Meet The Team</h2>
   <div className="imagecards">
     <div className="card">
@@ -160,10 +172,10 @@ function App() {
   
 </div>
 
-<div className="contact">
+<div className="contact" id='contact'>
   <div className='icons'>
     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaLocationPin/> ALU, Kigali Rwanda</span>
-    <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><AiOutlineMail/> @brainybadgersalu@gmail.com</span>
+    <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><AiOutlineMail/> brainybadgersalu@gmail.com</span>
     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaPhone/>+2507888888</span>
     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaInstagram/>_brainy_badgers_alu</span>
     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaYoutube/>brainy_badgers_alu</span>
@@ -202,13 +214,6 @@ function App() {
         <button>Send</button>
   </div>
 </div>
-{/* <ScrollToTop
-        smooth="true"
-        className="scrolltotop"
-        width="20"
-        height="20"
-        color="#fff"
-      /> */}
       <ScrollToTop
       smooth="true"
       className="scrolltotop"
