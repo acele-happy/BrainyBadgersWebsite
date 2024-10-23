@@ -1,7 +1,22 @@
 import './index.css';
 import './App.css'
-import {FaInstagram,FaLinkedin,FaTwitter} from "react-icons/fa"
+import {FaInstagram,FaLinkedin,FaPhone,FaTwitter, FaVoicemail, FaYoutube} from "react-icons/fa"
+import { useState } from 'react';
+import { FaLocationPin } from 'react-icons/fa6';
+import { AiOutlineMail } from 'react-icons/ai';
 function App() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const onchange = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
   return (
     <div className='container'>
@@ -143,8 +158,49 @@ function App() {
 </div>
 
 <div className="contact">
-  
+  <div className='icons'>
+    <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaLocationPin/> ALU, Kigali Rwanda</span>
+    <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><AiOutlineMail/> @brainybadgersalu@gmail.com</span>
+    <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaPhone/>+2507888888</span>
+    <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaInstagram/>_brainy_badgers_alu</span>
+    <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaYoutube/>brainy_badgers_alu</span>
+  </div>
+  <div className='form'>
+    <h2>Get in Touch</h2>
+    <p>24/7 We answer your problems</p>
+    <form action="#">
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            onChange={onchange}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            onChange={onchange}
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            name="subject"
+            onChange={onchange}
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            onChange={onchange}
+          ></textarea>
+        </form>
+        <button>Send</button>
+  </div>
 </div>
+
+<div className="footer">Copyright &copy; 2024. Brainy Badgers</div>
     </div>
   )
 }
