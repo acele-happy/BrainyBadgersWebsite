@@ -66,23 +66,26 @@ ul li:hover{
   width: 92%;
   display: flex;
   justify-content: space-evenly;
-  /* text-align: center; */
+  /* background-color: green; */
+  text-align: center;
 }
 
 .aboutus h2{
-  width: 200px;
+  /* width: 200px; */
   font-weight: bold;
   font-size: 1.2em;
   text-align: center;
-  margin-left: 250px;
   letter-spacing: 2px;
   text-align: center;
   display: inline-block;
-  left: 15%;
   position: relative;
 }
 .aboutus .about{
   padding: 15px;
+  background: rebeccapurple;
+  width: 80%;
+  transition: transform 0.5s ease-in-out;
+  height: auto;
 }
 .about p{
   margin-top: 20px;
@@ -91,7 +94,7 @@ ul li:hover{
 }
 .about button{
   position: relative;
-  left: 26%;
+  /* left: 26%; */
   top: 50px;
   border:1px solid #d7ad46;
   color: #111;

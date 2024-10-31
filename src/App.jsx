@@ -1,11 +1,14 @@
 import './index.css';
 import './App.css'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import {FaInstagram,FaLinkedin,FaPhone,FaTwitter, FaVoicemail, FaYoutube} from "react-icons/fa"
 import { useState,useRef } from 'react';
 import { FaLocationPin } from 'react-icons/fa6';
 import { AiOutlineMail } from 'react-icons/ai';
 import ScrollToTop from 'react-scroll-to-top';
 import axios from 'axios';
+import Slider from './components/Slider';
+import Button from "react-bootstrap/Button"
 
 // import {} 
 function App() {
@@ -80,9 +83,10 @@ function App() {
 
 <div className="aboutus" id='about'>
   <div className='about'> 
-  <h2>Get To Know Us</h2>
+  {/* <h2>Get To Know Us</h2>
   <p>We are a passionate and diverse team of six innovators from all corners of Africa, driven by a shared mission to tackle some of the most pressing challenges in agriculture. With a perfect balance of gender and a variety of cultural and educational backgrounds, our team reflects the spirit of collaboration and inclusion that defines our journey.<br/><br /> Our journey is just beginning, and we are excited about what lies ahead. With the support of ALU and the collaborative spirit within our team, we are confident that our solutions will contribute to transforming agriculture and creating more jobs for future generations. The best is yet to come, and we invite you to follow our progress as we work towards a brighter, more sustainable future.</p>
-  <button onClick={teamScroll}>Meet Our Team!</button>
+  <button onClick={teamScroll}>Meet Our Team!</button> */}
+  <Slider teamScroll={teamScroll}/>
   </div>
 </div>
 
