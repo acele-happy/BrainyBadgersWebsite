@@ -13,6 +13,7 @@ ul{
 }
 li{
   color: #fff;
+  font-size: 0.9em;
 }
 ul li:hover{
   color: #d7ad46 !important;
@@ -74,8 +75,11 @@ ul li:hover{
   font-size: 1.2em;
   text-align: center;
   margin-left: 250px;
-  color: #d7ad46;
   letter-spacing: 2px;
+  text-align: center;
+  display: inline-block;
+  left: 15%;
+  position: relative;
 }
 .aboutus .about{
   padding: 15px;
@@ -87,8 +91,8 @@ ul li:hover{
 }
 .about button{
   position: relative;
-  left: 250px;
-  top: 10px;
+  left: 26%;
+  top: 50px;
   border:1px solid #d7ad46;
   color: #111;
   width: 40%;
@@ -100,10 +104,14 @@ ul li:hover{
   background-color: #d7ad46;
   color: #fff;
 }
+.abtimg{
+  background-color: blue;
+  width: 100%;
+}
 .abtimg img{
   background-color: red;
   width: 100%;
-  height: 90%;
+  height: 80%;
 }
 .home{
   display: flex;
@@ -182,7 +190,7 @@ div#four{
 }
 .card{
   width: 300px;
-  height: 300px;
+  height: 350px;
   /* background-color: rebeccapurple; */
 }
 .card img{
@@ -246,6 +254,22 @@ div#four{
   top: 15px;
 }
 
+.cardteam{
+  /* background-color: rebeccapurple; */
+}
+.cardteam img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.cardteam div{
+  /* background-color: red; */
+  width: 50%;
+  position: relative;
+  left: 30px;
+  margin: 20px;
+}
+
 .contact{
   left: 100px;
   top: 500px;
@@ -259,7 +283,7 @@ div#four{
   background-color: #8bc355;
   width: 50%;
   height: auto;
-  background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\alu.jpg");
+  /* background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\home.jpg"); */
   /* background-position: center;
   background-repeat: no-repeat; */
 }
@@ -275,14 +299,14 @@ div#four{
   width: 80%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
   transition: 0.2s;
   border-radius: 3px;
 }
 .contact textarea{
   width: 80%;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
   text-indent: 10px;
 }
 
@@ -302,7 +326,8 @@ div#four{
 }
 .form p{
   text-align: center;
-  color: #e7e4e4;
+  color: #222;
+  margin-bottom: 10px;
 }
 
 .form button{
@@ -329,8 +354,24 @@ div#four{
   margin: 0px !important;
   top: 600px;
   text-align: center;
-  color: #888;
+  color: #000;
   padding: 10px;
+  height: 250px;
+  background-color: #F5F5F4;
+  font-size: 0.9em;
+
+}
+.footer .line{
+  background: #444;
+  height: 1px;
+  width: 90%;
+  position: relative;
+  left: 5%;
+}
+.footercontent{
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .scrolltotop{
   border-radius: 50% !important;

@@ -24,7 +24,8 @@ function App() {
 
   const ref = useRef(null);
   const handleClickSroll = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+    // ref.current?.scrollIntoView({ behavior: "smooth" });
+    window.scroll({behavior:"smooth"})
   };
 
   const contactScroll = () => {
@@ -33,6 +34,8 @@ function App() {
   const teamScroll = () => {
     document.getElementById("team").scrollIntoView({ behavior: "smooth" });
   };
+
+  
 
   const onSubmit = () => {
     console.log("hhh")
@@ -50,12 +53,13 @@ function App() {
   return (
     <div className='container'>
        <div className="navbar flex justify-between items-center px-4 py-2">
-  <h1 className="bb">Brainy<span style={{color:"#d7ad46"}}>Badgers</span></h1>
+  <h1 className="bb" style={{display:"flex",justifyContent:"center",alignItems:"center"}}> <img src='src\assets\logo.png' style={{display:"inline-block", width:"20px",marginBottom:"3px",marginRight:"5px"}}/> BRAINY<span style={{color:"#d7ad46"}}>BADGERS</span></h1>
   <ul className="flex space-x-8">
-    <li onClick={handleClickSroll}><a href="#home" >Home</a></li>
-    <li onClick={handleClickSroll}><a href="#about" >About Us</a></li>
-    <li onClick={handleClickSroll}><a href="#challenges" >Challenges</a></li>
-    <li onClick={contactScroll}><a href="#contact" >Contact Us</a></li>
+    <li onClick={handleClickSroll}><a href="#home" >HOME</a></li>
+    <li onClick={handleClickSroll}><a href="#about" >ABOUT US</a></li>
+    <li onClick={handleClickSroll}><a href="#challenges" >CHALLENGES</a></li>
+    <li onClick={handleClickSroll}><a href="#prototype" >PROTOTYPE</a></li>
+    <li onClick={contactScroll}><a href="#contact" >CONTACT US</a></li>
   </ul>
 </div>
 
@@ -75,19 +79,15 @@ function App() {
 </div>
 
 <div className="aboutus" id='about'>
-
-<div className='abtimg'>
-  <img src='src\assets\bb.jpg' alt="pic"/>
-</div>
   <div className='about'> 
-  <h2>ABOUT US</h2>
-  <p>We are a passionate and diverse team of six innovators from all corners of Africa, driven by a shared mission to tackle some of the most pressing challenges in agriculture. With a perfect balance of gender and a variety of cultural and educational backgrounds, our team reflects the spirit of collaboration and inclusion that defines our journey.<br/><br /> Meeting at the African Leadership University (ALU) in Cohort 2 of the E-Lab program, we decided to unite our strengths, knowledge, and experiences to address agricultural challenges, with a focus on job creation and sustainable development. Agriculture is at the heart of Africa’s economy, and we believe that innovative solutions can unlock new opportunities for growth, efficiency, and resilience across the continent.<br/><br /> Our journey is just beginning, and we are excited about what lies ahead. With the support of ALU and the collaborative spirit within our team, we are confident that our solutions will contribute to transforming agriculture and creating more jobs for future generations. The best is yet to come, and we invite you to follow our progress as we work towards a brighter, more sustainable future.</p>
+  <h2>Get To Know Us</h2>
+  <p>We are a passionate and diverse team of six innovators from all corners of Africa, driven by a shared mission to tackle some of the most pressing challenges in agriculture. With a perfect balance of gender and a variety of cultural and educational backgrounds, our team reflects the spirit of collaboration and inclusion that defines our journey.<br/><br /> Our journey is just beginning, and we are excited about what lies ahead. With the support of ALU and the collaborative spirit within our team, we are confident that our solutions will contribute to transforming agriculture and creating more jobs for future generations. The best is yet to come, and we invite you to follow our progress as we work towards a brighter, more sustainable future.</p>
   <button onClick={teamScroll}>Meet Our Team!</button>
   </div>
 </div>
 
 <div className="elab" id='challenges'>
-    <h2>E-Lab Challenges</h2>
+    <h2>E-Lab Challenges</h2><br />
     <p>In E-Lab, we gain valuable leadership skills and tools to help us pursue our missions effectively. Through hands-on challenges and collaborative projects, we engage deeply with our communities, driving real impact and personal growth.</p>
     <div className="cards">
       <div className="card">
@@ -151,32 +151,32 @@ function App() {
 <div className="ourteam" id='team'>
   <h2>Meet The Team</h2>
   <div className="imagecards">
-    <div className="card">
+    <div className="cardteam">
       <img src='src\assets\w.jpg'/>
       <div><span style={{fontWeight:"bold"}}>Erick Kanja</span> <br/><span style={{color:"#222"}}>Team Lead</span> <span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
-    <div className="card">
+    <div className="cardteam">
       <img src='src\assets\w.jpg'/>
       <div><span style={{fontWeight:"bold"}}>Lydivine Umutesi</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
-    <div className="card">
+    <div className="cardteam">
       <img src='src\assets\w.jpg'/>
       <div><span style={{fontWeight:"bold"}}>Dennis Nyiringango</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
-    <div className="card">
+    <div className="cardteam">
       <img src='src\assets\me.jpg'/>
       <div><span style={{fontWeight:"bold"}}>Acele Happy</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
-    <div className="card">
+    <div className="cardteam">
       <img src='src\assets\w.jpg'/>
       <div><span style={{fontWeight:"bold"}}>Amazing Mkonta</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
-    <div className="card">
+    <div className="cardteam">
       <img src='src\assets\w.jpg'/>
       <div><span style={{fontWeight:"bold"}}>Kevin Runanira</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
@@ -196,25 +196,28 @@ function App() {
   </div>
   <div className='form'>
     <h2>Get in Touch</h2>
-    <p>24/7 We answer your problems</p>
+    <p>Our team would love to hear from you!</p>
     <form action="#">
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Full Name"
             name="name"
             onChange={onchange}
+            required
           />
           <input
             type="email"
             placeholder="Email"
             name="email"
             onChange={onchange}
+            required
           />
           <input
             type="text"
             placeholder="Subject"
             name="subject"
             onChange={onchange}
+            required
           />
           <textarea
             name="message"
@@ -223,9 +226,10 @@ function App() {
             rows="10"
             placeholder="Message"
             onChange={onchange}
+            required
           ></textarea>
         </form>
-        <button onClick={onSubmit}>Send</button>
+        <button type='submit' onClick={onSubmit}>Send</button>
   </div>
 </div>
       <ScrollToTop
@@ -236,7 +240,31 @@ function App() {
       color="#d7ad46"
       />
 
-<div className="footer">Copyright &copy; 2024. Brainy Badgers</div>
+<div className="footer">
+  <div className="footercontent">
+  <img src='src\assets\logo.png' alt='logo' style={{position:"relative", right:"80px",height:"60%"}}/>
+  
+  <div>
+   <div style={{display:"flex", flexDirection:"row"}}>
+   <div style={{marginTop:"30px"}}>
+      <h3 style={{fontSize:"1.2em", color:"#111", marginBottom:"4px", fontWeight:"bold"}}>About Us</h3>
+      <span style={{color:"#444", fontSize:"0.9em"}}>Mission</span><br/>
+      <span style={{color:"#444", fontSize:"0.9em"}}>Team</span>
+    </div>
+    <div style={{marginLeft:"160px",marginTop:"30px", marginBottom:"4px",}}>
+      <h3 style={{fontSize:"1.2em", color:"#111",fontWeight:"bold"}}>Socials</h3>
+      <span style={{color:"#444", fontSize:"0.9em"}}>Instagram</span><br/>
+      <span style={{color:"#444", fontSize:"0.9em"}}>Youtube</span>
+    </div>
+    <div style={{marginLeft:"160px",marginTop:"30px", marginBottom:"4px"}}>
+      <h3 style={{fontSize:"1.2em", color:"#111",fontWeight:"bold"}}>Projects</h3>
+      <span style={{color:"#444", fontSize:"0.9em"}}>project name</span><br/>
+    </div>
+  </div>
+   </div>
+  </div>
+  <div className="line"></div>
+  <span style={{color:"#777"}}>Copyright &copy; 2024. Brainy Badgers</span></div>
     </div>
   )
 }
