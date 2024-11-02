@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .navbar{
   padding: 10px;
   height: 60px;
@@ -10,6 +13,7 @@
 }
 ul{
   margin-right: 50px;
+  
 }
 li{
   color: #fff;
@@ -418,8 +422,14 @@ div#four{
     top: 10px;
     right: 20px;
   }
-  .container .menu-closed{
+  .container .menu-closed li{
     display: none;
+  }
+  .container .menu-closed{
+    transform: translateX(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+
   }
   .container .menu-open {
     display: flex;
@@ -429,17 +439,18 @@ div#four{
   right: 0; /* Align the menu to the right */
   background-color: #8bc355;
   width: 50%;
-  height: 30vh;
+  height: 35vh;
   margin: 10px;
   z-index: 2;
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transform: translateX(0); /* Final state */
   transition: transform 0.3s ease, opacity 0.3s ease;
-  transform: translateY(0); /* Final state */
     opacity: 1; /* Final opacity */
   }
   .container .menu-open li{
     margin: 5px;
+    margin-left: 30px;
   }
 
   .home h1, .home p, .home button{
@@ -542,5 +553,9 @@ div#four{
   }
   .elab,.ourteam,.contact{
     left: 60px;
+  }
+  .responsive-li{
+    margin-left:34px !important;
+    background: red;
   }
 }

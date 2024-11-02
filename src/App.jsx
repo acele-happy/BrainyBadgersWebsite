@@ -68,8 +68,8 @@ function App() {
       </div>
        <div className="navbar flex justify-between items-center px-4 py-2">
   <h1 className="bb" style={{display:"flex",justifyContent:"center",alignItems:"center"}}> <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586225/Brainy%20badgers/logo_drg66f.png' style={{display:"inline-block", width:"20px",marginBottom:"3px",marginRight:"5px"}}/> BRAINY<span style={{color:"#d7ad46"}}>BADGERS</span></h1>
-  <ul className={isMenuOpen ? "menu-open flex space-x-8" : "menu-closed flex space-x-8"}>
-    <li onClick={handleClickSroll}><a href="#home" >HOME</a></li>
+  <ul className={isMenuOpen ? "menu-open" : "menu-closed flex space-x-8"}>
+    <li onClick={handleClickSroll} className='responsive-li'><a href="#home" >HOME</a></li>
     <li onClick={handleClickSroll}><a href="#about" >ABOUT US</a></li>
     <li onClick={handleClickSroll}><a href="#challenges" >CHALLENGES</a></li>
     <li onClick={handleClickSroll}><a href="#prototype" >PROTOTYPE</a></li>
