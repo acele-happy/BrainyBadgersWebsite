@@ -82,7 +82,7 @@ ul li:hover{
 }
 .aboutus .about{
   padding: 15px;
-  background: rebeccapurple;
+  background: #375819;
   width: 80%;
   transition: transform 0.5s ease-in-out;
   height: auto;
@@ -185,6 +185,7 @@ div#four{
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 1.5em;
+  text-align: center;
 }
 .imagecards{
   margin-top: 50px;
@@ -385,4 +386,161 @@ div#four{
 .scrolltotop >*{
   color: #fff !important;
   /* color: #d7ad46 #8bc355; */
+}
+.menu{
+  display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 479px) { 
+
+  .home .imagecircle{
+    display: none;
+  }
+  .home h1{
+    font-size: 2.2em;
+  }
+  .home button{
+    width: 60%;
+    position: relative;
+    right: 20px !important;
+  }
+  .menu{
+    display: block;
+  }
+
+  .menu img{
+    width: 30px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+    top: 10px;
+    right: 20px;
+  }
+  .container .menu-closed{
+    display: none;
+  }
+  .container .menu-open {
+    display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  right: 0; /* Align the menu to the right */
+  background-color: #8bc355;
+  width: 50%;
+  height: 30vh;
+  margin: 10px;
+  z-index: 2;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(0); /* Final state */
+    opacity: 1; /* Final opacity */
+  }
+  .container .menu-open li{
+    margin: 5px;
+  }
+
+  .home h1, .home p, .home button{
+    position: relative;
+    left: 30px;
+  }
+
+  .aboutus{
+    position: relative;
+    left: 20px;
+  }
+  .aboutus .about{
+    width: 100%;
+    position: relative;
+    top: 50px;
+  }
+  .elab,.ourteam,.contact{
+    position: relative;
+    left: 30px;
+  }
+  .container{
+    height: 85vh;
+  }
+  .elab .cards{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /* .elab .cards {
+    background: blue;
+  } */
+  .elab .cards .card{
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .elab .cards .card img{
+    width: 95%;
+  }
+  .elab .cards .card div{
+    width: 80%;
+  }
+  .ourteam{
+    top: 250px;
+  }
+  .imagecards{
+    grid-template-columns: 1fr 1fr;
+  }
+  .card img{
+    height: 150px;
+    width: 150px;
+  }
+
+  .contact .form{
+    width: 100%;
+    position: relative;
+    right: 30px;
+  }
+  .contact .icons{
+    display: none;
+  }
+  .contact h2{
+    position: relative;
+    right: 100px;
+  }
+  .contact p{
+    position: relative;
+    left: 30px;
+  }
+  .contact form input, .contact form textarea{
+    width: 100%;
+  }
+  .footercontent img{
+    display: none;
+  }
+  .footercontent div div{
+    padding: 20px;
+  }
+  .footercontent div div div{
+    margin: 0px !important;
+  }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container{
+    width: 190% !important;
+    height: 150vh;
+  }
+  .scale{
+    height: 190px;
+    width: 145px;
+  }
+  .aboutus{
+    left: 50px;
+  }
+  .aboutus .about{
+    /* position: relative; */
+    margin-top: 200px;
+    width: 100%;
+  }
+  .elab,.ourteam,.contact{
+    left: 60px;
+  }
 }

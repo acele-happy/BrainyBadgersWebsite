@@ -38,6 +38,11 @@ function App() {
     document.getElementById("team").scrollIntoView({ behavior: "smooth" });
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = ()=>{
+    setIsMenuOpen(!isMenuOpen)
+  }
   
 
   const onSubmit = () => {
@@ -55,9 +60,15 @@ function App() {
 
   return (
     <div className='container'>
+       <div className="menu" onClick={toggleMenu}>
+      <img
+            src="src\assets\menu.png"
+            alt="menu"
+          />
+      </div>
        <div className="navbar flex justify-between items-center px-4 py-2">
   <h1 className="bb" style={{display:"flex",justifyContent:"center",alignItems:"center"}}> <img src='src\assets\logo.png' style={{display:"inline-block", width:"20px",marginBottom:"3px",marginRight:"5px"}}/> BRAINY<span style={{color:"#d7ad46"}}>BADGERS</span></h1>
-  <ul className="flex space-x-8">
+  <ul className={isMenuOpen ? "menu-open flex space-x-8" : "menu-closed flex space-x-8"}>
     <li onClick={handleClickSroll}><a href="#home" >HOME</a></li>
     <li onClick={handleClickSroll}><a href="#about" >ABOUT US</a></li>
     <li onClick={handleClickSroll}><a href="#challenges" >CHALLENGES</a></li>
@@ -96,6 +107,7 @@ function App() {
     <div className="cards">
       <div className="card">
         <img src='src\assets\home.jpg'/>
+        
         <div>
           <span>1</span><br/>
           <h2>Introduction</h2>
@@ -171,7 +183,7 @@ function App() {
       {/* <span></span> */}
     </div>
     <div className="cardteam">
-      <img src='src\assets\me.jpg'/>
+      <img src='src\assets\mee.jpg'/>
       <div><span style={{fontWeight:"bold"}}>Acele Happy</span> <br/><span style={{color:"#222"}}>Team Lead</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
@@ -251,7 +263,7 @@ function App() {
   <div>
    <div style={{display:"flex", flexDirection:"row"}}>
    <div style={{marginTop:"30px"}}>
-      <h3 style={{fontSize:"1.2em", color:"#111", marginBottom:"4px", fontWeight:"bold"}}>About Us</h3>
+      <h3 style={{fontSize:"1.2em", color:"#111", marginBottom:"4px", fontWeight:"bold"}}>Quick Links</h3>
       <span style={{color:"#444", fontSize:"0.9em"}}>Mission</span><br/>
       <span style={{color:"#444", fontSize:"0.9em"}}>Team</span>
     </div>
@@ -262,7 +274,7 @@ function App() {
     </div>
     <div style={{marginLeft:"160px",marginTop:"30px", marginBottom:"4px"}}>
       <h3 style={{fontSize:"1.2em", color:"#111",fontWeight:"bold"}}>Projects</h3>
-      <span style={{color:"#444", fontSize:"0.9em"}}>project name</span><br/>
+      <span style={{color:"#444", fontSize:"0.9em"}}>AgroPoints</span><br/>
     </div>
   </div>
    </div>
