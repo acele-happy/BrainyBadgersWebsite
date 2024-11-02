@@ -138,27 +138,27 @@ ul li:hover{
   transition: 0.3s all;
 }
 div#one {
-  background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\home.jpg");
+  background-image: url("https://res.cloudinary.com/dweikgdwq/image/upload/v1730586250/Brainy%20badgers/home_qwfhh7.jpg");
   -moz-border-radius: 150px 0 0 0;
   border-radius: 150px 0 0 0;
   left: 0;
   top: 0;
 }
 div#two{
-   background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\e.jpg");
+   background-image: url("https://res.cloudinary.com/dweikgdwq/image/upload/v1730586254/Brainy%20badgers/e_c7aew5.jpg");
   -moz-border-radius: 0 150px 0 0;
   border-radius: 0 150px 0 0;
   right: 0;
 }
 div#three{
-  background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\w.jpg");
+  background-image: url("https://res.cloudinary.com/dweikgdwq/image/upload/v1730586247/Brainy%20badgers/w_sak97h.jpg");
   -moz-border-radius: 0 0 150px 0;
   border-radius: 0 0 150px 0;
   bottom: 0;
   right: 0;
 }
 div#four{
-  background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\r.jpg");
+  background-image: url("https://res.cloudinary.com/dweikgdwq/image/upload/v1730586259/Brainy%20badgers/r_eb9ve9.jpg");
   -moz-border-radius: 0 0 0 150px;
   border-radius: 0 0 0 150px;
   bottom: 0;
