@@ -56,9 +56,13 @@ ul li:hover{
   padding: 10px;
   border-radius: 5px;  
   transition: 0.4s;
+  background:linear-gradient(to left, #1e2327 50%, #8bc355 50%) right;
+  transition: all .5s ease-out;
+  background-size: 200%;
 }
 .home button:hover{
-  background: #8bc355;
+  /* background: #8bc355; */
+  background-position: left;
 }
 
 
@@ -105,10 +109,14 @@ ul li:hover{
   width: 40%;
   padding: 10px;
   border-radius: 5px;  
-  transition: 0.4s ease-in;
+  /* transition: 0.4s ease-in; */
+  background:linear-gradient(to left, #fff 50%, #d7ad46 50%) right;
+  transition: all .5s ease-out;
+  background-size: 200%;
 }
 .about button:hover{
-  background-color: #d7ad46;
+  /* background-color: #d7ad46; */
+  background-position: left;
   color: #fff;
 }
 .abtimg{
@@ -346,8 +354,9 @@ div#four{
   color: #fff;
   width: 60%;
   padding: 10px;
-  border-radius: 5px;  
-  transition: 0.4s;
+  border-radius: 5px; 
+  
+  /* transition: 0.4s; */
 }
 .icons{
   display: flex;
