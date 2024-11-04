@@ -203,7 +203,7 @@ function App() {
         
       </div>
       <div className="card" style={{marginTop:"150px"}}>
-        <img src='src\assets\home.jpg'/>
+        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730740943/Brainy%20badgers/hom_zxccby.jpg'/>
         <div>
           <span>6</span><br/>
           <h2>Digital Print</h2>
@@ -219,7 +219,7 @@ function App() {
   <h2>Meet The Team</h2>
   <div className="imagecards">
     <div className="cardteam">
-      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586247/Brainy%20badgers/w_sak97h.jpg'/>
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730741127/Brainy%20badgers/erick_llxixv.jpg'/>
       <div><span style={{fontWeight:"bold"}}>Erick Kanja</span> <br/><span style={{color:"#222"}}>Team Lead</span> <span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
