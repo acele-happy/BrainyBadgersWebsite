@@ -11,6 +11,8 @@ import Slider from './components/Slider';
 import Button from "react-bootstrap/Button"
 import ReactPlayer from 'react-player';
 import AOS from 'aos'
+import { motion } from 'framer-motion';
+import useScrollDirection from './utils/useScrollDirection';
 
 // import {} 
 function App() {
@@ -20,6 +22,8 @@ function App() {
     subject: "",
     message: "",
   });
+
+  const [errors, setErrors] = useState({})
   const onchange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -49,20 +53,34 @@ function App() {
 
   const onSubmit = () => {
     console.log("hhh")
+    const newErrors = {};
+    Object.keys(formData).forEach((key) => {
+      if (!formData[key]) {
+        newErrors[key] = ` ${key} is required!`;
+      }
+    })
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors); // Set errors if any fields are empty
+    }else{
     axios
       // .post("https://portifolio-backend-u7ba.vercel.app/contactme", formData)
       .post("https://portifolio-backend-1-sbzy.onrender.com/contactme", formData)
       .then((data) => {
+        setErrors({});
         window.location.reload()
         console.log("dataaa "+data)
         return;
       })
       .catch((ex) => console.log("erorrrr "+ex));
+    }
   };
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true }); // Initialize AOS with a 1s duration
   }, []);
+
+  const scrollDirection = useScrollDirection();
 
   return (
     <div className='container'>
@@ -78,7 +96,7 @@ function App() {
     <li onClick={handleClickSroll} className='responsive-li'><a href="#home" >HOME</a></li>
     <li onClick={handleClickSroll}><a href="#about" >ABOUT US</a></li>
     <li onClick={handleClickSroll}><a href="#challenges" >CHALLENGES</a></li>
-    <li onClick={handleClickSroll}><a href="#prototype" >PROTOTYPE</a></li>
+    {/* <li onClick={handleClickSroll}><a href="#prototype" >PROTOTYPE</a></li> */}
     <li onClick={contactScroll}><a href="#contact" >CONTACT US</a></li>
   </ul>
 </div>
@@ -112,11 +130,11 @@ function App() {
     <p>In E-Lab, we gain valuable leadership skills and tools to help us pursue our missions effectively. Through hands-on challenges and collaborative projects, we engage deeply with our communities, driving real impact and personal growth.</p>
     <div className="cards">
       <div className="card">
-        {/* <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586250/Brainy%20badgers/home_qwfhh7.jpg'/> */}
+        {/* <img style={{height:"50vh"}} src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730746720/Brainy%20badgers/WhatsApp_Image_2024-09-25_at_15.07.42_c1b07a22_k4239f.jpg'/> */}
         <iframe
         width="100%"
         height="250px"
-        src="https://www.youtube.com/embed/qDU1IOTbhVM"
+        src="https://youtu.be/11ga043_Bmk"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -135,7 +153,7 @@ function App() {
        <iframe
         width="100%"
         height="250px"
-        src="https://www.youtube.com/embed/qDU1IOTbhVM"
+        src="https://youtu.be/11ga043_Bmk"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -144,13 +162,13 @@ function App() {
         <div>
           <span>2</span><br/>
           <h2>Discover Africa</h2>
-          <p>We learnt more about the Kamba community from Kenya and made video where each member presented what the learnt about that community.</p>
+          <p>We learnt more about the Kamba community from Kenya and made a video where each member presented what the learnt about that community.</p>
         </div>
         
       </div>
       <div className="card">
-        {/* <img src='src\assets\pri.jpg'/> */}
-        <iframe
+        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730747289/Brainy%20badgers/WhatsApp_Image_2024-10-15_at_15.35.10_4f4baadf_idet7p.jpg'/>
+        {/* <iframe
         width="100%"
         height="250px"
         src="https://www.youtube.com/embed/qDU1IOTbhVM"
@@ -158,17 +176,17 @@ function App() {
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-      ></iframe>
+      ></iframe> */}
         <div>
           <span>3</span><br/>
           <h2>HELP-LAB</h2>
-          <p>We went to Kenza International School where we taught primary students more about public speaking and how they can improve theirs.</p>
+          <p>We visited Kenza International School to conduct a workshop on public speaking, equipping primary students with essential skills to enhance their speaking abilities and boost their confidence.</p>
         </div>
         
       </div>
       <div className="card" style={{marginTop:"150px"}}>
-        {/* <img src='src\assets\home.jpg'/> */}
-        <iframe
+        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730747092/Brainy%20badgers/20241021_163507_v5xxcg.jpg'/>
+        {/* <iframe
         width="100%"
         height="250px"
         src="https://www.youtube.com/embed/qDU1IOTbhVM"
@@ -176,11 +194,11 @@ function App() {
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-      ></iframe>
+      ></iframe> */}
         <div>
           <span>4</span><br/>
           <h2>Hunt for Treasure</h2>
-          <p>Each team member made an elevator pitch including what they're passionate about, why, and what they want to do to solve it, as well as what they bring to the team.</p>
+          <p>We conducted an interview with the CEO of AgroSeeds, gaining valuable insights into Rwanda's agriculture industry and the unique challenges and opportunities it presents.</p>
         </div>
         
       </div>
@@ -189,7 +207,7 @@ function App() {
         <iframe
         width="100%"
         height="250px"
-        src="https://www.youtube.com/embed/qDU1IOTbhVM"
+        src="https://youtu.be/11ga043_Bmk"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -198,7 +216,7 @@ function App() {
         <div>
           <span>5</span><br/>
           <h2>Launch Your Mission</h2>
-          <p>We learnt more about the Kamba community from Kenya and made video where each member presented what the learnt about that community.</p>
+          <p>We delivered a compelling pitch that outlined our team's identity, highlighted the challenges we aim to address, and presented our innovative solution designed to tackle these issues effectively.</p>
         </div>
         
       </div>
@@ -207,7 +225,7 @@ function App() {
         <div>
           <span>6</span><br/>
           <h2>Digital Print</h2>
-          <p>We went to Kenza International School where we taught primary students more about public speaking and how they can improve theirs.</p>
+          <p>We developed a dynamic website that showcases our E-LAB journey, featuring detailed accounts of the activities we undertook and the experiences we gained along the way.</p>
         </div>
         
       </div>
@@ -265,6 +283,7 @@ function App() {
     <h2>Get in Touch</h2>
     <p>Our team would love to hear from you!</p>
     <form action="#">
+    {errors.name && <span style={{color:"red"}}>{errors.name}</span>}
           <input
             type="text"
             placeholder="Full Name"
@@ -272,6 +291,8 @@ function App() {
             onChange={onchange}
             required
           />
+          
+          {errors.email && <span style={{color:"red"}}>{errors.email}</span>}
           <input
             type="email"
             placeholder="Email"
@@ -279,6 +300,8 @@ function App() {
             onChange={onchange}
             required
           />
+          
+          {errors.subject && <span style={{color:"red"}}>{errors.subject}</span>}
           <input
             type="text"
             placeholder="Subject"
@@ -286,6 +309,8 @@ function App() {
             onChange={onchange}
             required
           />
+          
+          {errors.message && <span style={{color:"red"}}>{errors.message}</span>}
           <textarea
             name="message"
             id="message"
@@ -295,6 +320,7 @@ function App() {
             onChange={onchange}
             required
           ></textarea>
+          
         </form>
         <button type='submit' onClick={onSubmit}>Send</button>
   </div>
