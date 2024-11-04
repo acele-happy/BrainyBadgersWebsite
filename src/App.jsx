@@ -2,13 +2,15 @@ import './index.css';
 import './App.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import {FaInstagram,FaLinkedin,FaPhone,FaTwitter, FaVoicemail, FaYoutube} from "react-icons/fa"
-import { useState,useRef } from 'react';
+import { useState,useRef,useEffect } from 'react';
 import { FaLocationPin } from 'react-icons/fa6';
 import { AiOutlineMail } from 'react-icons/ai';
 import ScrollToTop from 'react-scroll-to-top';
 import axios from 'axios';
 import Slider from './components/Slider';
 import Button from "react-bootstrap/Button"
+import ReactPlayer from 'react-player';
+import AOS from 'aos'
 
 // import {} 
 function App() {
@@ -58,6 +60,10 @@ function App() {
       .catch((ex) => console.log("erorrrr "+ex));
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // Initialize AOS with a 1s duration
+  }, []);
+
   return (
     <div className='container'>
        <div className="menu" onClick={toggleMenu}>
@@ -79,11 +85,11 @@ function App() {
 
 <div className="home" id='home'>
     <div>
-    <h1>The Brainy <br/>Badgers</h1>
-    <p>Our think tank mission is to transform the agricultural landscape through innovative strategies that drive job creation.</p>
-    <button onClick={contactScroll}>Contact Us</button>
+    <h1 className='animate'>The Brainy <br/>Badgers</h1>
+    <p className='animate'>Our think tank mission is to transform the agricultural landscape through innovative strategies that drive job creation.</p>
+    <button className='animate' onClick={contactScroll}>Contact Us</button>
     </div>
-    <div className='imagecircle'>
+    <div className='imagecircle animate'>
     <div class="scale" id="one"></div>
   <div class="scale" id="two"></div>
   <div class="scale" id="three"></div>
@@ -93,7 +99,7 @@ function App() {
 </div>
 
 <div className="aboutus" id='about'>
-  <div className='about'> 
+  <div className='about' data-aos="fade-up" data-aos-delay="200"> 
   {/* <h2>Get To Know Us</h2>
   <p>We are a passionate and diverse team of six innovators from all corners of Africa, driven by a shared mission to tackle some of the most pressing challenges in agriculture. With a perfect balance of gender and a variety of cultural and educational backgrounds, our team reflects the spirit of collaboration and inclusion that defines our journey.<br/><br /> Our journey is just beginning, and we are excited about what lies ahead. With the support of ALU and the collaborative spirit within our team, we are confident that our solutions will contribute to transforming agriculture and creating more jobs for future generations. The best is yet to come, and we invite you to follow our progress as we work towards a brighter, more sustainable future.</p>
   <button onClick={teamScroll}>Meet Our Team!</button> */}
@@ -106,8 +112,16 @@ function App() {
     <p>In E-Lab, we gain valuable leadership skills and tools to help us pursue our missions effectively. Through hands-on challenges and collaborative projects, we engage deeply with our communities, driving real impact and personal growth.</p>
     <div className="cards">
       <div className="card">
-        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586250/Brainy%20badgers/home_qwfhh7.jpg'/>
-        
+        {/* <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586250/Brainy%20badgers/home_qwfhh7.jpg'/> */}
+        <iframe
+        width="100%"
+        height="250px"
+        src="https://www.youtube.com/embed/qDU1IOTbhVM"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
         <div>
           <span>1</span><br/>
           <h2>Introduction</h2>
@@ -116,7 +130,17 @@ function App() {
         
       </div>
       <div className="card">
-        <img src='src\assets\home.jpg'/>
+        {/* <img src='src\assets\home.jpg'/> */}
+       {/* <ReactPlayer url="https://www.youtube.com/watch?v=qDU1IOTbhVM" width="300px" height="250px" /> */}
+       <iframe
+        width="100%"
+        height="250px"
+        src="https://www.youtube.com/embed/qDU1IOTbhVM"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
         <div>
           <span>2</span><br/>
           <h2>Discover Africa</h2>
@@ -125,7 +149,16 @@ function App() {
         
       </div>
       <div className="card">
-        <img src='src\assets\pri.jpg'/>
+        {/* <img src='src\assets\pri.jpg'/> */}
+        <iframe
+        width="100%"
+        height="250px"
+        src="https://www.youtube.com/embed/qDU1IOTbhVM"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
         <div>
           <span>3</span><br/>
           <h2>HELP-LAB</h2>
@@ -134,7 +167,16 @@ function App() {
         
       </div>
       <div className="card" style={{marginTop:"150px"}}>
-        <img src='src\assets\home.jpg'/>
+        {/* <img src='src\assets\home.jpg'/> */}
+        <iframe
+        width="100%"
+        height="250px"
+        src="https://www.youtube.com/embed/qDU1IOTbhVM"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
         <div>
           <span>4</span><br/>
           <h2>Hunt for Treasure</h2>
@@ -143,7 +185,16 @@ function App() {
         
       </div>
       <div className="card" style={{marginTop:"150px"}}>
-        <img src='src\assets\home.jpg'/>
+        {/* <img src='src\assets\home.jpg'/> */}
+        <iframe
+        width="100%"
+        height="250px"
+        src="https://www.youtube.com/embed/qDU1IOTbhVM"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
         <div>
           <span>5</span><br/>
           <h2>Launch Your Mission</h2>
@@ -184,7 +235,7 @@ function App() {
     </div>
     <div className="cardteam">
       <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586244/Brainy%20badgers/mee_gjvrqp.jpg'/>
-      <div><span style={{fontWeight:"bold"}}>Acele Happy</span> <br/><span style={{color:"#222"}}>Software developer</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
+      <div><span style={{fontWeight:"bold"}}>Acele Happy</span> <br/><span style={{color:"#222"}}>Full-stack developer</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
       {/* <span></span> */}
     </div>
     <div className="cardteam">

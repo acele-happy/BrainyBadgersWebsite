@@ -209,9 +209,12 @@ div#four{
   height: 350px;
   /* background-color: rebeccapurple; */
 }
-.card img{
+.card img, .card iframe{
   height: 250px;
   width: 300px;
+}
+.card iframe:hover{
+  z-index: 1;
 }
 .card div{
   background-color: #fff;
@@ -405,6 +408,24 @@ div#four{
   display: none;
 }
 
+.animate{
+  opacity: 0;
+  transform: translateY(100px);
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* Responsive */
 
 @media (max-width: 479px) { 
@@ -485,7 +506,7 @@ div#four{
     height: 85vh;
   }
   .elab .cards{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -494,21 +515,29 @@ div#four{
   } */
   .elab .cards .card{
     width: 100%;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
   }
-  .elab .cards .card img{
+  .elab .cards .card iframe, .elab .cards .card img{
     width: 95%;
+    height: 50vh;
   }
   .elab .cards .card div{
     width: 80%;
   }
   .ourteam{
     top: 250px;
+    margin-left: -15px !important;
   }
   .imagecards{
     grid-template-columns: 1fr 1fr;
   }
-  .card img{
+  .imagecards .cardteam{
+    margin: 5px;
+  }
+  .cardteam div span{
+    font-size: 0.8em;
+  }
+  .card iframe, .card img{
     height: 150px;
     width: 150px;
   }
