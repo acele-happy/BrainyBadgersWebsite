@@ -10,11 +10,15 @@ function Slider({teamScroll}) {
     },
     {
       title: "Problem Statement",
-      content: "The agricultural sector in Africa faces numerous challenges, from limited resources to outdated techniques. Our team is focused on finding solutions that can overcome these barriers and create a more sustainable and productive agricultural ecosystem."
+      content: `The agricultural sector in Africa faces numerous and complex challenges, ranging from limited access to resources like quality seeds, fertilizers, and advanced farming equipment to the reliance on outdated techniques that hinder productivity. Many small-scale farmers struggle to obtain the necessary knowledge, technology, and support needed to improve crop yields and adopt sustainable practices. Climate change further exacerbates these issues, leading to unpredictable weather patterns, soil degradation, and increased pest infestations, all of which threaten food security across the continent.`
     },
     {
       title: "Our Mission",
-      content: "Our mission is to transform agriculture by developing innovative solutions that address critical challenges and contribute to job creation. We believe in a sustainable future and are committed to making a lasting impact in the sector through collaboration, research, and dedication.",
+      content: "Our mission is to transform the agricultural sector by developing cutting-edge solutions that tackle its most pressing challenges and foster economic growth through job creation. We envision a future where agriculture not only sustains communities but also empowers them by creating opportunities for individuals to thrive in meaningful, sustainable careers. Our commitment to this mission is rooted in our belief in the power of collaboration, rigorous research, and steadfast dedication.",
+    },
+    {
+      title: "Our Solution",
+      content: "Our solution is a mobile application designed to engage and motivate young people to learn more about agriculture through interactive challenges. These challenges, provided by our partners, offer an exciting way to acquire agricultural knowledge and skills. With each completed challenge, users earn points that can be redeemed for discounts on seeds, manure, and other essential resources, making learning rewarding and beneficial for their farming journey.",
       button: "Prototype"
     },
     
@@ -32,7 +36,7 @@ function Slider({teamScroll}) {
 
   return (
     <div className="carousel">
-      <div className="carousel-content">
+      <div className="carousel-content" style={{ transform: `translateX(${currentSlide}%)` }}>
         <h2>{slides[currentSlide].title}</h2>
         <p>{slides[currentSlide].content}</p>
         {slides[currentSlide].button && <button onClick={teamScroll}>{slides[currentSlide].button}</button>}

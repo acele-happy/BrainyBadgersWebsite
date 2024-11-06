@@ -294,15 +294,18 @@ div#four{
   left: 100px;
   top: 500px;
   position: relative;
-  width: 92%;
+  width: 80%;
   display: flex;
   flex-direction: row;
+  box-shadow: 10px 5px 15px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .contact .icons{
   background-color: #8bc355;
   width: 50%;
   height: auto;
+  border-radius: 10px;
   /* background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\home.jpg"); */
   /* background-position: center;
   background-repeat: no-repeat; */
@@ -320,6 +323,9 @@ div#four{
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #444;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   transition: 0.2s;
   border-radius: 3px;
 }
@@ -328,6 +334,7 @@ div#four{
   outline: none;
   border: 1px solid #444;
   text-indent: 10px;
+  margin-top: 20px;
 }
 
 .contact .form{
@@ -341,19 +348,23 @@ div#four{
   font-weight: bold;
   font-size: 1.2em;
   text-align: center;
-  margin-left: 200px;
+  text-align: center;
+  margin-left: 150px;
   letter-spacing: 2px;
+  margin-top: 10px;
 }
 .form p{
   text-align: center;
-  color: #222;
+  color: #777;
   margin-bottom: 10px;
 }
 
 .form button{
   position: relative;
   left: 100px;
-  top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* top: 10px; */
   background: #d7ad46;
   color: #fff;
   width: 60%;

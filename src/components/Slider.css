@@ -1,7 +1,5 @@
 .carousel {
     position: relative;
-    /* width: 100%; */
-    /* max-width: 600px; */
     margin: auto;
     overflow: hidden;
     background: #fff;
@@ -13,7 +11,7 @@
   
   .carousel-content {
     transition: transform 0.5s ease-in-out;
-    justify-content: sp;
+    justify-content: space-around;
     align-items: center;
   }
   
@@ -36,7 +34,7 @@
     bottom: 50px;
   }
   
-  .carousel-controls {
+.carousel-controls {
     position: absolute;
     top: 50%;
     width: 100%;
