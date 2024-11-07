@@ -366,14 +366,18 @@ const Landing = ()=>{
  
  <div className="footer">
    <div className="footercontent">
-   <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586225/Brainy%20badgers/logo_drg66f.png' alt='logo' style={{position:"relative", right:"80px",height:"60%"}}/>
-   
+   <div>
+   <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731020833/Brainy%20badgers/Group_9_qeff5g.png' alt='logo' style={{position:"relative", right:"40px",height:"60%",width:"100px",height:"100px"}}/>
+   <p style={{width:"250px",position:"relative",right:"80px",color:"#444",fontSize:"13px",textAlign:"left",bottom:"15px"}}>We are a diverse team of Entrepreneurs with a shared mission to transform Rwanda's agriculture.</p>
+   </div>
+
    <div>
     <div style={{display:"flex", flexDirection:"row"}}>
     <div style={{marginTop:"30px"}}>
        <h3 style={{fontSize:"1.2em", color:"#111", marginBottom:"4px", fontWeight:"bold"}}>Quick Links</h3>
-       <span style={{color:"#444", fontSize:"0.9em"}}>Mission</span><br/>
-       <span style={{color:"#444", fontSize:"0.9em"}}>Team</span>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="#about">About Us</a></span><br/>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="#challenges">Challenges</a></span><br/>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="/gallery">Gallery</a></span>
      </div>
      <div style={{marginLeft:"160px",marginTop:"30px", marginBottom:"4px",}}>
        <h3 style={{fontSize:"1.2em", color:"#111",fontWeight:"bold"}}>Socials</h3>
@@ -382,7 +386,7 @@ const Landing = ()=>{
      </div>
      <div style={{marginLeft:"160px",marginTop:"30px", marginBottom:"4px"}}>
        <h3 style={{fontSize:"1.2em", color:"#111",fontWeight:"bold"}}>Projects</h3>
-       <span style={{color:"#444", fontSize:"0.9em"}}>AgroPoints</span><br/>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="https://www.figma.com/proto/fEM0FIUtpFFRp5Tp8H7WKJ/Prototype-BB?node-id=8-338&node-type=frame&t=6kgLkunxygFrfHm4-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A338" target='_blank' rel='noopener noreferrer'>AgroPoints</a></span><br/>
      </div>
    </div>
     </div>
