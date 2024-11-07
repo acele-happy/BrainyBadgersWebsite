@@ -267,7 +267,7 @@ const Landing = ()=>{
       <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586244/Brainy%20badgers/mee_gjvrqp.jpg' alt="Erick Kanja" />
       <div className="teamInfo">
         <span className="name">Acele Happy</span>
-        <span className="role">Tech genius behind our project, building and refining our prototype into an impactful tool.</span>
+        <span className="role">Software engineer behind our project, building and refining our prototype into an impactful tool.</span>
         <div className="socials">
           <a href="#"><FaInstagram /></a>
           <a href="#"><FaTwitter /></a>

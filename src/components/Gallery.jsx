@@ -102,6 +102,13 @@ const Gallery =()=> {
           className='w-80 shadow-1-strong rounded mb-4'
           alt='Boat on Calm Water'
         />
+          <img
+          src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731021581/Brainy%20badgers/WhatsApp_Image_2024-11-06_at_11.09.47_2313a99b_a4qnmz.jpg'
+          className='w-80 shadow-1-strong rounded mb-4'
+          alt='Mountains in the Clouds'
+        />
+
+        
         
       </MDBCol>
 
@@ -122,6 +129,16 @@ const Gallery =()=> {
           className='w-80 shadow-1-strong rounded mb-4'
           alt='Waves at Sea'
         />
+        <img
+          src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731021980/Brainy%20badgers/amk_oj6ztq.jpg'
+          className='w-80 shadow-1-strong rounded mb-4'
+          alt='Yosemite National Park'
+        />
+         <img
+          src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731021981/Brainy%20badgers/kenza_d1lmf4.jpg'
+          className='w-80 shadow-1-strong rounded mb-4'
+          alt='Waves at Sea'
+        />
       </MDBCol>
       
       
@@ -129,14 +146,18 @@ const Gallery =()=> {
     
     <div className="footer">
    <div className="footercontent">
-   <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586225/Brainy%20badgers/logo_drg66f.png' alt='logo' style={{position:"relative", right:"80px",height:"60%"}}/>
-   
+   <div>
+   <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731020833/Brainy%20badgers/Group_9_qeff5g.png' alt='logo' style={{position:"relative", right:"40px",height:"60%",width:"100px",height:"100px"}}/>
+   <p style={{width:"250px",position:"relative",right:"80px",color:"#444",fontSize:"13px",textAlign:"left",bottom:"15px"}}>We are a diverse team of Entrepreneurs with a shared mission to transform Rwanda's agriculture.</p>
+   </div>
+
    <div>
     <div style={{display:"flex", flexDirection:"row"}}>
     <div style={{marginTop:"30px"}}>
        <h3 style={{fontSize:"1.2em", color:"#111", marginBottom:"4px", fontWeight:"bold"}}>Quick Links</h3>
-       <span style={{color:"#444", fontSize:"0.9em"}}>Mission</span><br/>
-       <span style={{color:"#444", fontSize:"0.9em"}}>Team</span>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="#about">About Us</a></span><br/>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="#challenges">Challenges</a></span><br/>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="/gallery">Gallery</a></span>
      </div>
      <div style={{marginLeft:"160px",marginTop:"30px", marginBottom:"4px",}}>
        <h3 style={{fontSize:"1.2em", color:"#111",fontWeight:"bold"}}>Socials</h3>
@@ -145,14 +166,13 @@ const Gallery =()=> {
      </div>
      <div style={{marginLeft:"160px",marginTop:"30px", marginBottom:"4px"}}>
        <h3 style={{fontSize:"1.2em", color:"#111",fontWeight:"bold"}}>Projects</h3>
-       <span style={{color:"#444", fontSize:"0.9em"}}>AgroPoints</span><br/>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="https://www.figma.com/proto/fEM0FIUtpFFRp5Tp8H7WKJ/Prototype-BB?node-id=8-338&node-type=frame&t=6kgLkunxygFrfHm4-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A338" target='_blank' rel='noopener noreferrer'>AgroPoints</a></span><br/>
      </div>
    </div>
     </div>
    </div>
    <div className="line"></div>
    <span style={{color:"#777"}}>Copyright &copy; 2024. Brainy Badgers</span></div>
-    
     </>
   );
 }
