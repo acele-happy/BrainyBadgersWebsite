@@ -340,7 +340,7 @@ const Landing = ()=>{
  
  <div className="footer">
    <div className="footercontent">
-   <img src='src\assets\logo.png' alt='logo' style={{position:"relative", right:"80px",height:"60%"}}/>
+   <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586225/Brainy%20badgers/logo_drg66f.png' alt='logo' style={{position:"relative", right:"80px",height:"60%"}}/>
    
    <div>
     <div style={{display:"flex", flexDirection:"row"}}>
