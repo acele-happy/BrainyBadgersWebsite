@@ -10,15 +10,15 @@ function Slider({teamScroll}) {
     },
     {
       title: "Problem Statement",
-      content: `The agricultural sector in Africa faces numerous and complex challenges, ranging from limited access to resources like quality seeds, fertilizers, and advanced farming equipment to the reliance on outdated techniques that hinder productivity. Many small-scale farmers struggle to obtain the necessary knowledge, technology, and support needed to improve crop yields and adopt sustainable practices. Climate change further exacerbates these issues, leading to unpredictable weather patterns, soil degradation, and increased pest infestations, all of which threaten food security across the continent.`
+      content: `According to the National Institute of Statistics of Rwanda, approximately one person is unemployed for every eight people in the labor force in Rwanda. Although agriculture is a significant sector, only 15% of Rwandan youth are involved. Limited incentives, lack of innovation, and biased perceptions deter young people from pursuing careers in agriculture. This high rate of unemployment results in rising poverty in the country, further highlighting the need for a comprehensive solution to reduce the unemployment rate to 6% by 2040.`
     },
     {
       title: "Our Mission",
-      content: "Our mission is to transform the agricultural sector by developing cutting-edge solutions that tackle its most pressing challenges and foster economic growth through job creation. We envision a future where agriculture not only sustains communities but also empowers them by creating opportunities for individuals to thrive in meaningful, sustainable careers. Our commitment to this mission is rooted in our belief in the power of collaboration, rigorous research, and steadfast dedication.",
+      content: "Our mission is to empower youth in agriculture through a digital platform that rewards sustainable practices, creating pathways to rewarding careers and resilient farming communities.",
     },
     {
       title: "Our Solution",
-      content: "Our solution is a mobile application designed to engage and motivate young people to learn more about agriculture through interactive challenges. These challenges, provided by our partners, offer an exciting way to acquire agricultural knowledge and skills. With each completed challenge, users earn points that can be redeemed for discounts on seeds, manure, and other essential resources, making learning rewarding and beneficial for their farming journey.",
+      content: "A web platform / mobile App that engages youth in agriculture through gamified farming challenges, rewarding them with AgroPoints for essentials like seeds and tools. By partnering with agro-dealers and government programs, it reduces financial barriers and builds a skilled, motivated agricultural workforce in Rwanda.",
       button: "Prototype"
     },
     
@@ -43,7 +43,7 @@ function Slider({teamScroll}) {
       <div className="carousel-content" style={{ transform: `translateX(${currentSlide}%)` }}>
         <h2>{slides[currentSlide].title}</h2>
         <p>{slides[currentSlide].content}</p>
-        {slides[currentSlide].button && <button onClick={navigate}>{slides[currentSlide].button}</button>}
+        {slides[currentSlide].button && <button onClick={slides[currentSlide].title==="Get To Know Us"? teamScroll:navigate}>{slides[currentSlide].button}</button>}
       </div>
       <div className="carousel-controls">
         <span style={{marginRight:"60px",cursor:"pointer"}} onClick={prevSlide}>&#10094;</span>
