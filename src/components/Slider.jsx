@@ -5,7 +5,7 @@ function Slider({teamScroll}) {
   const slides = [
     {
       title: "Get To Know Us",
-      content: "We are a passionate and diverse team of six innovators from all corners of Africa, driven by a shared mission to tackle some of the most pressing challenges in agriculture. With a perfect balance of gender and a variety of cultural and educational backgrounds, our team reflects the spirit of collaboration and inclusion that defines our journey. Our journey is just beginning, and we are excited about what lies ahead. With the support of ALU and the collaborative spirit within our team, we are confident that our solutions will contribute to transforming agriculture and creating more jobs for future generations. The best is yet to come, and we invite you to follow our progress as we work towards a brighter, more sustainable future.",
+      content: "We are a passionate and diverse team of six innovators from all corners of Africa, driven by a shared mission to tackle some of the most pressing challenges in agriculture. With a perfect balance of gender and a variety of cultural and educational backgrounds, our team reflects the spirit of collaboration and inclusion that defines our journey. Our journey is just beginning, and we are excited about what lies ahead. With the support of ALU and the collaborative spirit within our team, we are confident that our solutions will contribute to transforming agriculture and creating more jobs for future generations.",
       button: "Meet Our Team!"
     },
     {
@@ -34,12 +34,16 @@ function Slider({teamScroll}) {
     setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
   };
 
+  const navigate = ()=>{
+    window.location.href = "https://www.figma.com/proto/fEM0FIUtpFFRp5Tp8H7WKJ/Prototype-BB?node-id=8-338&node-type=frame&t=6kgLkunxygFrfHm4-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A338"
+  }
+
   return (
     <div className="carousel">
       <div className="carousel-content" style={{ transform: `translateX(${currentSlide}%)` }}>
         <h2>{slides[currentSlide].title}</h2>
         <p>{slides[currentSlide].content}</p>
-        {slides[currentSlide].button && <button onClick={teamScroll}>{slides[currentSlide].button}</button>}
+        {slides[currentSlide].button && <button onClick={navigate}>{slides[currentSlide].button}</button>}
       </div>
       <div className="carousel-controls">
         <span style={{marginRight:"60px",cursor:"pointer"}} onClick={prevSlide}>&#10094;</span>
