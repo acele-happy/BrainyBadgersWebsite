@@ -193,44 +193,115 @@ const Landing = ()=>{
      </div>
    </div>
  
- <div className="ourteam" id='team'>
+ {/* <div className="ourteam" id='team'>
    <h2>Meet The Team</h2>
    <div className="imagecards">
      <div className="cardteam">
        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730741127/Brainy%20badgers/erick_llxixv.jpg'/>
        <div><span style={{fontWeight:"bold"}}>Erick Kanja</span> <br/><span style={{color:"#444"}}>Team Lead, keeping the team aligned, equipped, and moving forward toward our shared vision.</span> <span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
-       {/* <span></span> */}
      </div>
      <div className="cardteam">
        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586247/Brainy%20badgers/w_sak97h.jpg'/>
        <div><span style={{fontWeight:"bold"}}>Lydivine Umutesi</span> <br/><span style={{color:"#444"}}>Creative storyteller, capturing every milestone and sharing our mission with the world</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
-       {/* <span></span> */}
      </div>
      <div className="cardteam">
        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730643132/Brainy%20badgers/deni_t0l076.jpg'/>
        <div><span style={{fontWeight:"bold"}}>Dennis Nyiringango</span> <br/><span style={{color:"#444"}}>The energy engine, keeping spirits high and our message uplifting with vibes and music.</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
-       {/* <span></span> */}
      </div>
      <div className="cardteam">
        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586244/Brainy%20badgers/mee_gjvrqp.jpg'/>
        <div><span style={{fontWeight:"bold"}}>Acele Happy</span> <br/><span style={{color:"#444"}}>Tech genius behind our project, building and refining our prototype into an impactful tool.</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
-       {/* <span></span> */}
      </div>
      <div className="cardteam">
        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586247/Brainy%20badgers/w_sak97h.jpg'/>
        <div><span style={{fontWeight:"bold"}}>Amazing Mkonta</span> <br/><span style={{color:"#444"}}>Dynamic communicator, bringing passion and clarity to our message at every opportunity.</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
-       {/* <span></span> */}
      </div>
      <div className="cardteam">
        <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586247/Brainy%20badgers/w_sak97h.jpg'/>
        <div><span style={{fontWeight:"bold"}}>Kevin Runanira</span> <br/><span style={{color:"#444"}}>Strategic planner and our steady hand, navigating us through every challenge with finesse.</span><span style={{display:"flex"}}><a href='#' style={{marginRight:"10px"}}><FaInstagram/></a> <a href='#' style={{marginRight:"10px"}}><FaTwitter/></a> <a href='#'><FaLinkedin/></a></span></div>
-       {/* <span></span> */}
      </div>
    </div>
  
    
- </div>
- 
+ </div> */}
+ <div className="ourteamm" id="team">
+  <h2>Meet The Team</h2>
+  <div className="imagecards">
+    <div className="cardteamm">
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730741127/Brainy%20badgers/erick_llxixv.jpg' alt="Erick Kanja" />
+      <div className="teamInfo">
+        <span className="name">Erick Kanja</span>
+        <span className="role">Team Lead, keeping the team aligned, equipped, and moving forward toward our shared vision.</span>
+        <div className="socials">
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaTwitter /></a>
+          <a href="#"><FaLinkedin /></a>
+        </div>
+      </div>
+    </div>
+    <div className="cardteamm">
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730741127/Brainy%20badgers/erick_llxixv.jpg' alt="Erick Kanja" />
+      <div className="teamInfo">
+        <span className="name">Lydivine Umutesi</span>
+        <span className="role">Creative storyteller, capturing every milestone and sharing our mission with the world</span>
+        <div className="socials">
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaTwitter /></a>
+          <a href="#"><FaLinkedin /></a>
+        </div>
+      </div>
+    </div>
+    <div className="cardteamm">
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730643132/Brainy%20badgers/deni_t0l076.jpg' alt="Erick Kanja" />
+      <div className="teamInfo">
+        <span className="name">Dennis Nyiringango</span>
+        <span className="role">The energy engine, keeping spirits high and our message uplifting with vibes and music.</span>
+        <div className="socials">
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaTwitter /></a>
+          <a href="#"><FaLinkedin /></a>
+        </div>
+      </div>
+    </div>
+    <div className="cardteamm">
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586244/Brainy%20badgers/mee_gjvrqp.jpg' alt="Erick Kanja" />
+      <div className="teamInfo">
+        <span className="name">Acele Happy</span>
+        <span className="role">Tech genius behind our project, building and refining our prototype into an impactful tool.</span>
+        <div className="socials">
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaTwitter /></a>
+          <a href="#"><FaLinkedin /></a>
+        </div>
+      </div>
+    </div>
+    <div className="cardteamm">
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730741127/Brainy%20badgers/erick_llxixv.jpg' alt="Erick Kanja" />
+      <div className="teamInfo">
+        <span className="name">Amazing Mkonta</span>
+        <span className="role">Dynamic communicator, bringing passion and clarity to our message at every opportunity.</span>
+        <div className="socials">
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaTwitter /></a>
+          <a href="#"><FaLinkedin /></a>
+        </div>
+      </div>
+    </div>
+    <div className="cardteamm">
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730741127/Brainy%20badgers/erick_llxixv.jpg' alt="Erick Kanja" />
+      <div className="teamInfo">
+        <span className="name">Kevin Runanira</span>
+        <span className="role">Strategic planner and our steady hand, navigating us through every challenge with finesse.</span>
+        <div className="socials">
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaTwitter /></a>
+          <a href="#"><FaLinkedin /></a>
+        </div>
+      </div>
+    </div>
+    {/* Repeat the above card for each team member */}
+  </div>
+</div>
  <div className="contact" id='contact'>
    <div className='icons'>
      <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaLocationPin/> ALU, Kigali Rwanda</span>
