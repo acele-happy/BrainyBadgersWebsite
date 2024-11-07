@@ -135,16 +135,7 @@ const Landing = ()=>{
      <p>In E-Lab, we gain valuable leadership skills and tools to help us pursue our missions effectively. Through hands-on challenges and collaborative projects, we engage deeply with our communities, driving real impact and personal growth.</p>
      <div className="cards">
        <div className="card">
-         {/* <img style={{height:"50vh"}} src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730746720/Brainy%20badgers/WhatsApp_Image_2024-09-25_at_15.07.42_c1b07a22_k4239f.jpg'/> */}
-         <iframe
-         width="100%"
-         height="250px"
-         src="https://youtu.be/11ga043_Bmk"
-         title="YouTube video player"
-         frameBorder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-         allowFullScreen
-       ></iframe>
+         <img style={{objectFit:"cover"}} src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730985313/Brainy%20badgers/WhatsApp_Image_2024-11-06_at_10.27.04_2e252122_wy6btm.jpg'/>
          <div>
            <span>1</span><br/>
            <h2>Introduction</h2>
@@ -153,17 +144,7 @@ const Landing = ()=>{
          
        </div>
        <div className="card">
-         {/* <img src='src\assets\home.jpg'/> */}
-        {/* <ReactPlayer url="https://www.youtube.com/watch?v=qDU1IOTbhVM" width="300px" height="250px" /> */}
-        <iframe
-         width="100%"
-         height="250px"
-         src="https://youtu.be/11ga043_Bmk"
-         title="YouTube video player"
-         frameBorder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-         allowFullScreen
-       ></iframe>
+         <img style={{objectFit:"cover"}} src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731012086/Brainy%20badgers/news_gkw4tw.jpg'/>
          <div>
            <span>2</span><br/>
            <h2>Discover Africa</h2>
@@ -173,15 +154,7 @@ const Landing = ()=>{
        </div>
        <div className="card">
          <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730747289/Brainy%20badgers/WhatsApp_Image_2024-10-15_at_15.35.10_4f4baadf_idet7p.jpg'/>
-         {/* <iframe
-         width="100%"
-         height="250px"
-         src="https://www.youtube.com/embed/qDU1IOTbhVM"
-         title="YouTube video player"
-         frameBorder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-         allowFullScreen
-       ></iframe> */}
+         
          <div>
            <span>3</span><br/>
            <h2>HELP-LAB</h2>
@@ -191,15 +164,6 @@ const Landing = ()=>{
        </div>
        <div className="card" style={{marginTop:"150px"}}>
          <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730747092/Brainy%20badgers/20241021_163507_v5xxcg.jpg'/>
-         {/* <iframe
-         width="100%"
-         height="250px"
-         src="https://www.youtube.com/embed/qDU1IOTbhVM"
-         title="YouTube video player"
-         frameBorder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-         allowFullScreen
-       ></iframe> */}
          <div>
            <span>4</span><br/>
            <h2>Hunt for Treasure</h2>
@@ -208,16 +172,7 @@ const Landing = ()=>{
          
        </div>
        <div className="card" style={{marginTop:"150px"}}>
-         {/* <img src='src\assets\home.jpg'/> */}
-         <iframe
-         width="100%"
-         height="250px"
-         src="https://youtu.be/11ga043_Bmk"
-         title="YouTube video player"
-         frameBorder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-         allowFullScreen
-       ></iframe>
+         <img style={{objectFit:"cover"}} src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731011692/Brainy%20badgers/WhatsApp_Image_2024-11-05_at_17.52.42_69776463_adp1ag.jpg'/>
          <div>
            <span>5</span><br/>
            <h2>Launch Your Mission</h2>
