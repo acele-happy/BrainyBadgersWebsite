@@ -48,7 +48,7 @@
     filter: grayscale(20%);
     border-radius: 50%;
     position: relative;
-    left: 50px;
+    left: 80px;
   }
   
   .cardteamm:hover img {
