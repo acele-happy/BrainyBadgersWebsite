@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBRow,
 } from 'mdb-react-ui-kit';
-
+import {FaInstagram,FaLinkedin,FaPhone,FaTwitter, FaVoicemail, FaYoutube} from "react-icons/fa"
 const Gallery =()=> {
     const handleClickSroll = () => {
         // ref.current?.scrollIntoView({ behavior: "smooth" });
