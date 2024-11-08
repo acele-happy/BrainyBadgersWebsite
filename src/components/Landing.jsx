@@ -27,6 +27,7 @@ const Landing = ()=>{
       });
     
       const [errors, setErrors] = useState({})
+      const [success, setSuccess] = useState("")
       const onchange = (e) => {
         setFormData((prevState) => ({
           ...prevState,
@@ -78,7 +79,8 @@ const Landing = ()=>{
           .post("https://portifolio-backend-1-sbzy.onrender.com/contactme", formData)
           .then((data) => {
             setErrors({});
-            window.location.reload()
+            setSuccess("Your message was received. Thank you!");
+            // window.location.reload()
             console.log("dataaa "+data)
             return;
           })
@@ -327,8 +329,9 @@ const Landing = ()=>{
    <div className='form'>
      <h2>Get in Touch</h2>
      <p>Our team would love to hear from you!</p>
+     {success && <span style={{color:"green",marginLeft:"40%"}}>{success}</span>}
      <form action="#">
-     {errors.name && <span style={{color:"red"}}>{errors.name}</span>}
+     {errors.name && <span style={{color:"red",fontSize:"0.8em"}}>{errors.name}</span>}
            <input
              type="text"
              placeholder="Full Name"
@@ -337,7 +340,7 @@ const Landing = ()=>{
              required
            />
            
-           {errors.email && <span style={{color:"red"}}>{errors.email}</span>}
+           {errors.email && <span style={{color:"red",fontSize:"0.8em"}}>{errors.email}</span>}
            <input
              type="email"
              placeholder="Email"
@@ -346,7 +349,7 @@ const Landing = ()=>{
              required
            />
            
-           {errors.subject && <span style={{color:"red"}}>{errors.subject}</span>}
+           {errors.subject && <span style={{color:"red",fontSize:"0.8em"}}>{errors.subject}</span>}
            <input
              type="text"
              placeholder="Subject"
@@ -355,7 +358,7 @@ const Landing = ()=>{
              required
            />
            
-           {errors.message && <span style={{color:"red"}}>{errors.message}</span>}
+           {errors.message && <span style={{color:"red",fontSize:"0.8em"}}>{errors.message}</span>}
            <textarea
              name="message"
              id="message"

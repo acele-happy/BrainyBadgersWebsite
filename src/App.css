@@ -231,7 +231,7 @@ div#four{
 
 .elab{
   left: 80px;
-  top: 200px;
+  top: 300px;
   position: relative;
   width: 92%;
 }
@@ -301,7 +301,7 @@ div#four{
   flex-direction: row;
   box-shadow: 10px 5px 15px 2px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  height: 450px;
+  height: 500px;
 }
 
 .contact .icons{
@@ -336,7 +336,10 @@ div#four{
   width: 80%;
   height: 90px;
   outline: none;
-  border: 1px solid #444;
+  border-bottom: 1px solid #444;
+  /* border: none; */
+  
+  border-radius: 3px;
   text-indent: 10px;
   margin-top: 20px;
 }
