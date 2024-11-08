@@ -256,7 +256,7 @@ const Landing = ()=>{
       </div>
     </div>
     <div className="cardteamm">
-      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730741127/Brainy%20badgers/erick_llxixv.jpg' alt="Erick Kanja" />
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731082019/Brainy%20badgers/WhatsApp_Image_2024-11-08_at_16.21.30_8295c907_pqdk7l.jpg' alt="Erick Kanja" />
       <div className="teamInfo">
         <span className="name">Lydivine Umutesi</span>
         <span className="role">Creative storyteller, capturing every milestone and sharing our mission with the world</span>
@@ -292,7 +292,7 @@ const Landing = ()=>{
       </div>
     </div>
     <div className="cardteamm">
-      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730741127/Brainy%20badgers/erick_llxixv.jpg' alt="Erick Kanja" />
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731082198/Brainy%20badgers/WhatsApp_Image_2024-11-08_at_18.06.24_92bb29f4_ix6wc2.jpg' alt="Erick Kanja" />
       <div className="teamInfo">
         <span className="name">Amazing Mkonta</span>
         <span className="role">Dynamic communicator, bringing passion and clarity to our message at every opportunity.</span>
@@ -304,7 +304,7 @@ const Landing = ()=>{
       </div>
     </div>
     <div className="cardteamm">
-      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730741127/Brainy%20badgers/erick_llxixv.jpg' alt="Erick Kanja" />
+      <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731082020/Brainy%20badgers/IMG_8617_u6ahoo.jpg' alt="Erick Kanja" />
       <div className="teamInfo">
         <span className="name">Kevin Runanira</span>
         <span className="role">Strategic planner and our steady hand, navigating us through every challenge with finesse.</span>
