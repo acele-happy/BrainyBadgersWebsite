@@ -386,6 +386,7 @@ const Landing = ()=>{
    <div>
    <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1731020833/Brainy%20badgers/Group_9_qeff5g.png' alt='logo' style={{position:"relative", right:"40px",height:"50%",width:"100px"}}/>
    <p style={{width:"250px",position:"relative",right:"80px",color:"#444",fontSize:"13px",textAlign:"left",bottom:"15px"}}>We are a diverse team of Entrepreneurs with a shared mission to transform Rwanda's agriculture.</p>
+   <span style={{display:"flex",marginLeft:"-40px"}}><FaInstagram style={{marginRight:"5%"}}/> <FaYoutube style={{marginRight:"5%"}}/> <FaTwitter style={{marginRight:"5%"}}/> <FaLinkedin style={{marginRight:"5%"}}/></span>
    </div>
 
    <div>
@@ -409,7 +410,7 @@ const Landing = ()=>{
     </div>
    </div>
    <div className="line"></div>
-   <span style={{color:"#777"}}>Copyright &copy; 2024. Brainy Badgers</span></div>
+   <span style={{color:"#777", fontSize:"0.8em"}}>Copyright &copy; 2024. Brainy Badgers</span></div>
      </div>
  
       )
