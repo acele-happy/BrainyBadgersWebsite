@@ -39,11 +39,11 @@ const Gallery =()=> {
 <h1 className="bb" style={{display:"flex",justifyContent:"center",alignItems:"center"}}> <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586225/Brainy%20badgers/logo_drg66f.png' style={{display:"inline-block", width:"20px",marginBottom:"3px",marginRight:"5px"}}/> BRAINY<span style={{color:"#d7ad46"}}>BADGERS</span></h1>
 <ul className={isMenuOpen ? "menu-open" : "menu-closed flex space-x-8 galleyul"}>
   <li onClick={handleClickSroll} className='responsive-li'><a href="/" >HOME</a></li>
-  <li onClick={handleClickSroll}><a href="#about" >ABOUT US</a></li>
-  <li onClick={handleClickSroll}><a href="#challenges" >CHALLENGES</a></li>
+  <li onClick={handleClickSroll}><a href="/#about" >ABOUT US</a></li>
+  <li onClick={handleClickSroll}><a href="/#challenges" >CHALLENGES</a></li>
   {/* <li onClick={handleClickSroll}><a href="#prototype" >PROTOTYPE</a></li> */}
   <li onClick={contactScroll}><a href="/gallery" >GALLERY</a></li>
-  <li onClick={contactScroll}><a href="#contact" >CONTACT US</a></li>
+  <li onClick={contactScroll}><a href="/#contact" >CONTACT US</a></li>
 </ul>
 </div>
 
@@ -155,8 +155,8 @@ const Gallery =()=> {
     <div style={{display:"flex", flexDirection:"row"}}>
     <div style={{marginTop:"30px"}}>
        <h3 style={{fontSize:"1.2em", color:"#111", marginBottom:"4px", fontWeight:"bold"}}>Quick Links</h3>
-       <span style={{color:"#444", fontSize:"0.9em"}}><a href="#about">About Us</a></span><br/>
-       <span style={{color:"#444", fontSize:"0.9em"}}><a href="#challenges">Challenges</a></span><br/>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="/#about">About Us</a></span><br/>
+       <span style={{color:"#444", fontSize:"0.9em"}}><a href="/#challenges">Challenges</a></span><br/>
        <span style={{color:"#444", fontSize:"0.9em"}}><a href="/gallery">Gallery</a></span>
      </div>
      <div style={{marginLeft:"160px",marginTop:"30px", marginBottom:"4px",}}>

@@ -301,16 +301,17 @@ div#four{
   flex-direction: row;
   box-shadow: 10px 5px 15px 2px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  height: 450px;
 }
 
 .contact .icons{
-  background-color: #8bc355;
   width: 50%;
   height: auto;
   border-radius: 10px;
-  /* background-image: url("C:\Users\HP 1030\Documents\GitHub\BrainyBadgersWebsite\vite-project\src\assets\home.jpg"); */
-  /* background-position: center;
-  background-repeat: no-repeat; */
+}
+
+.contact .icons .iconl{
+  margin-right: 10px;
 }
 .contact form{
   display: flex;
@@ -333,6 +334,7 @@ div#four{
 }
 .contact textarea{
   width: 80%;
+  height: 90px;
   outline: none;
   border: 1px solid #444;
   text-indent: 10px;

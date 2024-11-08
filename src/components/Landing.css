@@ -90,6 +90,9 @@
     color: #0077b5; /* You can add different colors for different icons */
   }
   
+
+/* Contact */
+
   @media (max-width: 768px) {
     .ourteamm h2 {
       font-size: 2rem;

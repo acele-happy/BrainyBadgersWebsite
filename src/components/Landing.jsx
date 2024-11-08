@@ -16,7 +16,7 @@ import ReactPlayer from 'react-player';
 import AOS from 'aos'
 import { motion } from 'framer-motion';
 import useScrollDirection from '../utils/useScrollDirection';
-import { BrowserRouter as Router,Routes,Route,Link } from 'react-router-dom';
+import { BrowserRouter as Router,Routes,Route,Link, useLocation } from 'react-router-dom';
 import Gallery from './Gallery';
 const Landing = ()=>{
       const [formData, setFormData] = useState({
@@ -35,9 +35,16 @@ const Landing = ()=>{
       };
     
       const ref = useRef(null);
-      const handleClickSroll = () => {
+      const handleClickSroll = (event, sectionId) => {
         // ref.current?.scrollIntoView({ behavior: "smooth" });
-        window.scroll({behavior:"smooth"})
+        event.preventDefault();
+        if (window.location.pathname !== '/') {
+          // Navigate to homepage
+          window.location.href = `/#${sectionId}`;
+        } else {
+          // Already on homepage, just scroll to the section
+          document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+        }
       };
     
       const contactScroll = () => {
@@ -78,12 +85,19 @@ const Landing = ()=>{
           .catch((ex) => console.log("erorrrr "+ex));
         }
       };
+
+      const {hash} = useLocation();
     
       useEffect(() => {
         AOS.init({ duration: 1000, once: true }); // Initialize AOS with a 1s duration
-      }, []);
-    
-      const scrollDirection = useScrollDirection();
+        if (hash) {
+          const target = document.querySelector(hash);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }, [hash]);
+  
 
       return(
         <div className='container'>
@@ -97,12 +111,12 @@ const Landing = ()=>{
         <div className="navbar flex justify-between items-center px-4 py-2">
    <h1 className="bb" style={{display:"flex",justifyContent:"center",alignItems:"center"}}> <img src='https://res.cloudinary.com/dweikgdwq/image/upload/v1730586225/Brainy%20badgers/logo_drg66f.png' style={{display:"inline-block", width:"20px",marginBottom:"3px",marginRight:"5px"}}/> BRAINY<span style={{color:"#d7ad46"}}>BADGERS</span></h1>
    <ul className={isMenuOpen ? "menu-open" : "menu-closed flex space-x-8"}>
-     <li onClick={handleClickSroll} className='responsive-li'><a href="#home" >HOME</a></li>
-     <li onClick={handleClickSroll}><a href="#about" >ABOUT US</a></li>
-     <li onClick={handleClickSroll}><a href="#challenges" >CHALLENGES</a></li>
+     <li onClick={(e)=>handleClickSroll(e,"home")} className='responsive-li'><a href="#home" >HOME</a></li>
+     <li onClick={(e)=>handleClickSroll(e,"about")}><a href="#about" >ABOUT US</a></li>
+     <li onClick={(e)=>handleClickSroll(e,"challenges")}><a href="#challenges" >CHALLENGES</a></li>
      {/* <li onClick={handleClickSroll}><a href="#prototype" >PROTOTYPE</a></li> */}
-     <li onClick={contactScroll}><a href="/gallery" >GALLERY</a></li>
-     <li onClick={contactScroll}><a href="#contact" >CONTACT US</a></li>
+     <li><a href="/gallery" >GALLERY</a></li>
+     <li onClick={(e)=>handleClickSroll(e,"contact")}><a href="#contact" >CONTACT US</a></li>
    </ul>
  </div>
  
@@ -304,11 +318,11 @@ const Landing = ()=>{
 </div>
  <div className="contact" id='contact'>
    <div className='icons'>
-     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaLocationPin/> ALU, Kigali Rwanda</span>
-     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><AiOutlineMail/> brainybadgersalu@gmail.com</span>
-     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaPhone/>+2507888888</span>
-     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaInstagram/>_brainy_badgers_alu</span>
-     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1.2em",color:"#fff"}}><FaYoutube/>brainy_badgers_alu</span>
+     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><FaLocationPin className="iconl"/> ALU, Kigali Rwanda</span>
+     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><AiOutlineMail className="iconl"/> brainybadgersalu@gmail.com</span>
+     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><FaPhone className="iconl"/>+2507888888</span>
+     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><FaInstagram className="iconl"/>_brainy_badgers_alu</span>
+     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><FaYoutube className="iconl"/>brainy_badgers_alu</span>
    </div>
    <div className='form'>
      <h2>Get in Touch</h2>
