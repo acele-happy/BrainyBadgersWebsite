@@ -322,7 +322,7 @@ const Landing = ()=>{
    <div className='icons'>
      <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><FaLocationPin className="iconl"/> ALU, Kigali Rwanda</span>
      <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><AiOutlineMail className="iconl"/> brainybadgersalu@gmail.com</span>
-     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><FaPhone className="iconl"/>+2507888888</span>
+     <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><FaPhone className="iconl"/>+250787858685</span>
      <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><FaInstagram className="iconl"/>_brainy_badgers_alu</span>
      <span style={{display:"flex", alignItems:"center", margin:"10px", fontSize:"1em",color:"#fff"}}><FaYoutube className="iconl"/>brainy_badgers_alu</span>
    </div>

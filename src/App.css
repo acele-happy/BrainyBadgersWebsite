@@ -146,10 +146,11 @@ ul li:hover{
 
  .scale{
   height: 170px;
-  width: 150px;
+  width: 170px;
   background-size: cover;
   position: absolute;
   transition: 0.3s all;
+  cursor: pointer;
 }
 div#one {
   background-image: url("https://res.cloudinary.com/dweikgdwq/image/upload/v1730586250/Brainy%20badgers/home_qwfhh7.jpg");

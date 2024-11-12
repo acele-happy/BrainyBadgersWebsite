@@ -47,8 +47,8 @@ const Gallery =()=> {
 </ul>
 </div>
 
-<h2 style={{textAlign:"center", marginTop:"50px", fontSize:"2em"}}>The Brainy badgers Gallery</h2>
-<p style={{textAlign:"center", color:"#444"}}>To all the memories from E-Lab 🎉</p>
+<h2 style={{textAlign:"center", marginTop:"50px", fontSize:"2em"}} className='animate'>The Brainy badgers Gallery</h2>
+<p style={{textAlign:"center", color:"#444"}} className='animate'>To all the memories from E-Lab 🎉</p>
     <MDBRow className='row'>
       <MDBCol lg={4} md={12} className='mb-4 mb-lg-0'>
         <img
